@@ -1,44 +1,44 @@
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f7fb;
-  color: #333;
+  background-color: #f4f4f4;
 }
+
 header {
-  background: #004080;
+  background-color: #003f7d;
   color: white;
   padding: 20px;
   text-align: center;
 }
-#busca {
-  margin-top: 10px;
+
+input[type="text"] {
   padding: 10px;
-  width: 60%;
-  max-width: 400px;
-  font-size: 1rem;
+  width: 80%;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
 }
+
 #casos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
   padding: 20px;
 }
-.card {
-  background: white;
-  border: 1px solid #ddd;
-  border-left: 5px solid #007BFF;
-  margin: 10px;
+
+.caso {
+  background-color: white;
+  border-left: 5px solid #007BFF; /* azul padrão */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px;
   width: 300px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.card h2 {
-  font-size: 1.2rem;
-  color: #004080;
-  margin: 0 0 10px;
-}
-.card p {
-  font-size: 0.9rem;
-  margin: 5px 0;
-}
+
+.produtividade { border-color: #f57c00; }       /* laranja */
+.educacao { border-color: #0288d1; }             /* azul claro */
+.ecossistemas { border-color: #388e3c; }         /* verde */
+.rural { border-color: #fbc02d; }                /* amarelo */
+.indicacoes { border-color: #8e24aa; }           /* roxo */
